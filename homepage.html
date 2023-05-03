@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPT304 Assignment2</title>
+</head>
+
+<script src = "/src/holiday.js"></script>
+<script src = '/src/hotel.js'></script>
+<script src = '/src/weather.js'></script>
+<script src = '/src/jQuery.js'></script>
+
+<body>
+    <div class="header">
+        <span style="font-size: xx-large; text-align: center;color: green">
+            <h1>Holiday Planner</h1>
+        </span>
+        <div>
+            <span style="font-size: small;color: green">
+            <h1>Holiday</h1>
+            </span>
+            Input the Country: (e.g. CN): <input type = 'text' value = '' id = 'CountryCode'>
+            <button type="button" onclick="fetchHolidays()">Get Holiday List</button>
+        </div>
+        <pre id="holidaylist">
+        </pre>
+        <div>
+            <span style="font-size: small;color: green">
+            <h1>Hotel</h1>
+            </span>
+            Input the City (e.g. Nanjing): <input type="text" value="" id="cityName">
+            <button type="button" onclick="fetchHotels()">Get Hotel List</button>
+        </div>
+        <pre id="hotellist">
+        </pre>
+        <div>
+            <span style="font-size: small;color: green">
+            <h1>Weather</h1>
+            </span>
+            Input the Holiday Date from the list above (within 15 days)(e.g. 2023-05-07):
+            <input type = 'text' value = '' id = 'selectedDate'>
+            <button type="button" onclick="fetchWeather()">Get Weather</button>
+        </div>
+        <pre id="weatherlist">
+        </pre>
+</body>
+</html>
